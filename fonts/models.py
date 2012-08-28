@@ -38,7 +38,7 @@ class Font(models.Model):
 
 class FontImage(models.Model):
     font = models.ForeignKey(Font, verbose_name=_('font'), related_name='images')
-    image = models.ImageField(verbose_name=_('image'), upload_to='uploads_fontimages')
+    image = models.ImageField(verbose_name=_('image'), upload_to='uploads/fontimages')
 
     def __unicode__(self):
         return self.image.url
