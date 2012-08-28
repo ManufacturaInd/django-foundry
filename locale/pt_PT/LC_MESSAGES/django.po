@@ -1,0 +1,108 @@
+# European Portuguese translation for django-foundry.
+# Copyright (C) 2012 Manufactura Independente.
+# This file is distributed under the same license as the django-foundry package.
+# Ricardo Lafuente <ricardo@manufacturaindependente.org>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: django-foundry\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-08-28 02:26+0100\n"
+"PO-Revision-Date: 2012-08-28 01:15+0100\n"
+"Last-Translator: Ricardo Lafuente <ricardo@manufacturaindependente.org>\n"
+"Language-Team: \n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: fonts/models.py:5 fonts/models.py:17 fonts/models.py:42
+msgid "name"
+msgstr "nome"
+
+#: fonts/models.py:6
+msgid "short bio"
+msgstr "biografia curta"
+
+#: fonts/models.py:7
+msgid "website 1"
+msgstr "website 1"
+
+#: fonts/models.py:8
+msgid "website 2"
+msgstr "website 2"
+
+#: fonts/models.py:9
+msgid "website 3"
+msgstr "website 3"
+
+#: fonts/models.py:10
+msgid "photo"
+msgstr "foto"
+
+#: fonts/models.py:13
+msgid "person"
+msgstr "pessoa"
+
+#: fonts/models.py:14
+msgid "people"
+msgstr "pessoas"
+
+#. Translators: This can mean things like Bold or Italic, as well as other more obscure style names. Note this is different from 'weight'.
+#: fonts/models.py:19
+msgid "style"
+msgstr "estilo"
+
+#: fonts/models.py:20
+msgid "authors"
+msgstr "autores"
+
+#: fonts/models.py:21
+msgid "font file"
+msgstr "ficheiro da fonte"
+
+#. Translators: This is a quick, twitter-like slogan to be displayed as a caption to the font.
+#: fonts/models.py:23
+msgid "tagline"
+msgstr "slogan"
+
+#. Translators: This is a longer description of the font.
+#: fonts/models.py:25
+msgid "description"
+msgstr "descrição"
+
+#: fonts/models.py:26
+msgid "upload time"
+msgstr "hora de publicação"
+
+#: fonts/models.py:27
+msgid "last modified"
+msgstr "última actualização"
+
+#: fonts/models.py:30 fonts/models.py:34
+msgid "font"
+msgstr "fonte"
+
+#: fonts/models.py:31
+msgid "fonts"
+msgstr "fontes"
+
+#: fonts/models.py:35
+msgid "image"
+msgstr "imagem"
+
+#: fonts/models.py:38
+msgid "font image"
+msgstr "imagem da fonte"
+
+#: fonts/models.py:39
+msgid "font images"
+msgstr "imagens da fonte"
+
+#: fonts/models.py:45
+msgid "font family"
+msgstr "família de fontes"
+
+#: fonts/models.py:46
+msgid "font families"
+msgstr "famílias de fontes"
