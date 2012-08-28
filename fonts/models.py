@@ -9,6 +9,9 @@ class Person(models.Model):
     url3 = models.URLField(_('website 3'), blank=True)
     image = models.ImageField(_('photo'), upload_to='uploads/user_photos')
 
+    def __unicode__(self):
+        return self.name
+
     class Meta:
         verbose_name = _('person')
         verbose_name_plural = _('people')
@@ -23,8 +26,11 @@ class Font(models.Model):
     tagline = models.CharField(verbose_name=_('tagline'), max_length=120)
     # Translators: This is a longer description of the font.
     description = models.TextField(verbose_name=_('description'), max_length=10000)
-    upload_time = models.DateTimeField(verbose_name=_('upload time'), blank=True, editable=False)
-    last_modified = models.DateTimeField(verbose_name=_('last modified'), blank=True, editable=False)
+    upload_time = models.DateTimeField(verbose_name=_('upload time'), blank=True, null=True, editable=False)
+    last_modified = models.DateTimeField(verbose_name=_('last modified'), blank=True, null=True, editable=False)
+
+    def __unicode__(self):
+        return self.name + ' ' + self.style
 
     class Meta:
         verbose_name = _('font')
@@ -34,6 +40,9 @@ class FontImage(models.Model):
     font = models.ForeignKey(Font, verbose_name=_('font'), related_name='images')
     image = models.ImageField(verbose_name=_('image'), upload_to='uploads_fontimages')
 
+    def __unicode__(self):
+        return self.image.url
+    
     class Meta:
         verbose_name = _('font image')
         verbose_name_plural = _('font images')
