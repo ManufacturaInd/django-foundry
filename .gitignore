@@ -2,3 +2,4 @@ foundrydb.db
 *.pyc
 uploads/
 initial.json
+foundry/localsettings.py
